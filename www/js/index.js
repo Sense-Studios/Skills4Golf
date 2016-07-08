@@ -34,15 +34,32 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+
+        //var url = "http://wildhitz.nl"
+        //var url = "http://wildhitz.nl/wildhitzplayer/#/267e0609b3e6832fe9378ac5642bb209"
+        var url = "http://skills4golf.sense-studios.nl/"
+        $.ajax({
+            url: url,
+            type: 'GET',
+            complete: function(e, xhr, settings){
+               if(e.status === 200){
+                  document.getElementById("content_frame").src = url;
+                  document.getElementsByTagName('body')[0].style.backgroundImage = 'url("")'
+                  document.getElementsByTagName('body')[0].style.backgroundColor = '#000000'
+               }else{
+                  $('#could_not_connect').fadeIn('slow')
+               }
+            }
+        });
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         var parentElement = document.getElementById(id);
-        var listeningElement = parentElement.querySelector('.listening');
-        var receivedElement = parentElement.querySelector('.received');
+        //var listeningElement = parentElement.querySelector('.listening');
+        //var receivedElement = parentElement.querySelector('.received');
 
-        listeningElement.setAttribute('style', 'display:none;');
-        receivedElement.setAttribute('style', 'display:block;');
+        //listeningElement.setAttribute('style', 'display:none;');
+        //receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
     }
