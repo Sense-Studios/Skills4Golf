@@ -13,9 +13,6 @@
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "nl.movietrader.skills4sport.skills4golf"
         },
-        "cordova-plugin-compat": {
-            "PACKAGE_NAME": "nl.movietrader.skills4sport.skills4golf"
-        },
         "cordova-plugin-console": {
             "PACKAGE_NAME": "nl.movietrader.skills4sport.skills4golf"
         },
@@ -32,9 +29,6 @@
             "PACKAGE_NAME": "nl.movietrader.skills4sport.skills4golf"
         },
         "cordova-plugin-dialogs": {
-            "PACKAGE_NAME": "nl.movietrader.skills4sport.skills4golf"
-        },
-        "cordova-plugin-file": {
             "PACKAGE_NAME": "nl.movietrader.skills4sport.skills4golf"
         },
         "cordova-plugin-file-transfer": {
@@ -71,5 +65,12 @@
             "PACKAGE_NAME": "nl.movietrader.skills4sport.skills4golf"
         }
     },
-    "dependent_plugins": {}
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "nl.movietrader.skills4sport.skills4golf"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "nl.movietrader.skills4sport.skills4golf"
+        }
+    }
 }
