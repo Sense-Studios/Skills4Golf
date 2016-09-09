@@ -37,8 +37,8 @@ var app = {
 
         //var url = "http://wildhitz.nl"
         //var url = "http://wildhitz.nl/wildhitzplayer/#/267e0609b3e6832fe9378ac5642bb209"
-        //var url = "http://skills4golf.sense-studios.nl/"
-        var url = "http://develop.sense-studios.com:3636/"
+        var url = "http://skills4golf.sense-studios.nl/"
+        // var url = "http://develop.sense-studios.com:3636/"
         $.ajax({
             url: url,
             type: 'GET',
